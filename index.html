@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROFESORES</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>PROFESORES</h1>
+
+  <div class="container">
+    <div class="form-group">
+      <label for="cedula">Cédula:</label>
+      <input type="text" id="cedula" placeholder="Ingrese la cédula">
+    </div>
+
+    <div class="form-group">
+      <label for="nombres">Nombres:</label>
+      <input type="text" id="nombres" placeholder="Ingrese los nombres">
+    </div>
+
+    <div class="form-group">
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" placeholder="Ingrese los apellidos">
+    </div>
+
+    <div class="form-group">
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" placeholder="Ingrese la edad">
+    </div>
+
+    <div class="form-group">
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" placeholder="Ingrese el correo electrónico">
+    </div>
+
+    <div class="form-group">
+      <button id="guardar">Guardar</button>
+    </div>
+
+
+    <table class="table" id="tabla-profesores">
+      <thead>
+        <tr>
+          <th>Cédula</th>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Edad</th>
+          <th>Email</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+</body>
+</html>

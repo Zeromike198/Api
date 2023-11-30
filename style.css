@@ -1,0 +1,141 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Estilos para los botones de editar y eliminar */
+.editar,
+.eliminar {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.editar {
+  background-color: #007bff;
+}
+
+.eliminar {
+  background-color: #dc3545;
+}
+
+/* Media queries para diferentes tamaños de pantallas */
+@media all and (max-width: 480px) { 
+/* Ocultar el encabezado de la tabla para pantallas pequeñas */
+.table thead {
+display: none;
+}
+
+/* Desplegar filas de la tabla en bloque */
+.table td {
+display: block;
+text-align: center;
+border: none;
+padding: 5px;
+}
+
+/* Adiciona las etiquetas */
+.table td::before {
+content: attr(data-label);
+font-weight: bold;
+display: block;
+margin-bottom: 5px;
+}
+
+/* Espacio entre las celdas */
+.table td:last-child {
+margin-bottom: 10px;
+}
+
+/* Reduce el tamaño de los botones de accion */
+.editar,
+.eliminar {
+padding: 2px 4px;
+font-size: 10px;
+}
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+}
